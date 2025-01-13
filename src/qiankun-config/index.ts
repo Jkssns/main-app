@@ -5,18 +5,22 @@ export function injectMicroApps() {
   try {
     registerMicroApps(subApps, {
       beforeLoad: [
-        (app) => {
+        // @ts-ignore
+        app => {
           console.log("before load", app);
         },
       ],
       beforeMount: [
+        // @ts-ignore
         (app) => {
           console.log("before mount", app);
         },
       ],
       afterUnmount: [
+        // @ts-ignore
         (app) => {
           console.log("before unmount", app);
+          return '123';
         },
       ],
     });

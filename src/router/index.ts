@@ -6,16 +6,19 @@ const routes = [
 		name: 'app',
 		redirect: '/react-sub-app',
 		components: null,
+		children: []
 	},
 	{
 		path: '/react-sub-app',
 		name: 'react-sub-app',
 		components: null,
+		children: []
 	},
 	{
 		path: '/vue-sub-app',
 		name: 'vue-sub-app',
 		components: null,
+		children: []
 	},
 ]
 

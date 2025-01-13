@@ -4,9 +4,9 @@ import { start } from 'qiankun'
 import { injectMicroApps } from './qiankun-config/index'
 
 onMounted(() => {
-  if (!window.qiankunStarted) {
+  if (!(window as any).qiankunStarted) {
     // 是否启用qiankun
-    window.qiankunStarted = true
+    (window as any).qiankunStarted = true
     injectMicroApps()
     // 开启qiankun
     start({

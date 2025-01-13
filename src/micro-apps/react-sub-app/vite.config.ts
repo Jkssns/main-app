@@ -9,4 +9,5 @@ export default defineConfig({
       useDevMode: true
     })
   ],
+  base: 'http://localhost:3555'
 })
